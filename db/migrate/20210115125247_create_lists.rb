@@ -2,10 +2,9 @@ class CreateLists < ActiveRecord::Migration[6.0]
   def change
     create_table :lists do |t|
 
-      # ==========ここから追加する==========
-      t.string :title, null: false
-      t.references :user, foreign_key: true, null: false
-      # ==========ここまで追加する==========
+      t.string      :title, null: false, limit: 255
+      t.text        :memo, limit: 1000
+      t.references  :user, null: false, foreign_key: true
 
       t.timestamps
     end
