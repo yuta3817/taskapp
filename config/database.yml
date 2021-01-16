@@ -80,6 +80,8 @@ test:
 #
 production:
   <<: *default
-  database: taskapp_production
+  adapter: postgresql
+  database: db/production.postgresql
+  url: <%= ENV['postgres://mrwniiqyuusgcm:228431ed21b38db7cfc99e45eb7d18913365e70da8432e0ab6d5e17096f87281@ec2-52-206-44-27.compute-1.amazonaws.com:5432/d3i0qq49220vfk'] %>
   username: taskapp
   password: <%= ENV['TASKAPP_DATABASE_PASSWORD'] %>
