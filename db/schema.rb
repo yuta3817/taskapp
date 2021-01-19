@@ -16,14 +16,15 @@ ActiveRecord::Schema.define(version: 2021_01_15_131556) do
     t.date "date", null: false
     t.integer "list_id", null: false
     t.string "title", limit: 255, null: false
-    t.text "memo", null: false
+    t.text "memo", limit: 1000, null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["list_id"], name: "index_cards_on_list_id"
   end
 
   create_table "lists", force: :cascade do |t|
-    t.string "title", null: false
+    t.string "title", limit: 255, null: false
+    t.text "memo", limit: 1000
     t.integer "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
