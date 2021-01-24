@@ -13,7 +13,6 @@
 ActiveRecord::Schema.define(version: 2021_01_15_131556) do
 
   # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
 
   create_table "cards", force: :cascade do |t|
     t.date "date", null: false
