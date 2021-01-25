@@ -14,7 +14,6 @@ ActiveRecord::Schema.define(version: 2021_01_15_131556) do
 
   create_table "cards", charset: "utf8", force: :cascade do |t|
     t.date "date", null: false
-    t.bigint "list_id", null: false
     t.string "title", null: false
     t.text "memo", null: false
     t.datetime "created_at", precision: 6, null: false
