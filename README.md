@@ -1,24 +1,29 @@
-# README
+# TaskManager
+This app manages your daily work.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Description
+This app organizes and manages the work requested by multiple requesters.
 
-Things you may want to cover:
+# DEMO
+You can list tasks for each requester and manage response deadlines and response details.
 
-* Ruby version
+# Requirement
+- ruby '2.6.5'
+- rails, '~> 6.0'
+- unicorn, '5.4.1
+- devise
 
-* System dependencies
+# Usage
+$ git clone https://github.com/yuta3817/taskapp.git`
+$ cd hoge
+$ bundle install
+$ rails db:create
+$ rails db:migrate
+$ rails s
+👉 http://localhost:3000
 
-* Configuration
+# Author
+- Yuta Abe
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-
+# License
+"TaskManager" is under MIT license.
